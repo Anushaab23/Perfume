@@ -1,0 +1,178 @@
+.contact-one-page-sanctuary {
+    background: linear-gradient(135deg, #2d3e35 0%, #1a241f 100%); /* Lush Moss & Sage Green */
+    color: #c5a059; /* Artisan Gold - No pure white */
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floral-background-layer {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);
+    width: 60%;
+    opacity: 0.5; /* Clearly visible, sharp presence */
+    pointer-events: none;
+    z-index: 1;
+    filter: invert(100%) brightness(1.8) saturate(1.2); /* Sharp Gold Etching */
+}
+
+.garden-visual {
+    width: 100%;
+    height: auto;
+}
+
+.contact-content-wrapper {
+    display: flex;
+    gap: 120px;
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 10%;
+    height: 80vh;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-left-panel {
+    flex: 1;
+}
+
+.contact-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    color: #c5a059;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 200;
+    margin: 0;
+    line-height: .9;
+    color: #f5ebe0; /* Soft Creme instead of white */
+}
+
+.atelier-crest {
+    font-size: 1.5rem;
+    color: #c5a059;
+    margin: 25px 0;
+    opacity: 0.6;
+}
+
+.contact-details-minimal {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contact-item h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(197, 160, 89, 0.4);
+    margin-bottom: 8px;
+}
+
+.contact-luxury-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #f5ebe0;
+    font-weight: 300;
+}
+
+.atelier-location {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(197, 160, 89, 0.1);
+    padding-top: 25px;
+}
+
+.loc-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c5a059;
+}
+
+/* Right Form Section */
+.contact-right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-form-sanctuary {
+    background: rgba(197, 160, 89, 0.03);
+    padding: 60px;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    backdrop-filter: blur(20px);
+    width: 600px;
+    height: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c5a059;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    color: #f5ebe0;
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.contact-submit {
+    background: transparent;
+    border: 1px solid #c5a059;
+    color: #c5a059;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 1024px) {
+    .contact-content-wrapper { flex-direction: column; gap: 40px; padding: 10vh 5%; height: auto; }
+    .contact-one-page-sanctuary { height: auto; min-height: 100vh; overflow: visible; }
+    .contact-title { font-size: 4rem; }
+}
